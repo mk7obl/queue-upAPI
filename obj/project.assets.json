@@ -229,9 +229,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\playersAPI.csproj",
-      "projectName": "playersAPI",
-      "projectPath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\playersAPI.csproj",
+      "projectUniqueName": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\queueUp.csproj",
+      "projectName": "queueUp",
+      "projectPath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\queueUp.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\obj\\",
       "projectStyle": "PackageReference",

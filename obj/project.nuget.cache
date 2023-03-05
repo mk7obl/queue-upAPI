@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nto/a8RySTxPhxx5KnkXZafAHY5mngG1Nn0fgCSjYx7Z/PzkYLziHzsXAe7tmP5MGY/5D4EUruUp42f9xec1JQ==",
+  "dgSpecHash": "5Rgd1Hu6MxnNO39RXswQHCRS4ooB3h6i6557TgEtmCSz++drWCPvBqmZcxpzdB6hj2XWtsWxLaF5x96jQ2j+uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\playersAPI.csproj",
+  "projectFilePath": "C:\\Users\\mariu\\OneDrive\\Pulpit\\c#\\Projekty\\playersAPI\\queueUp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mariu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
