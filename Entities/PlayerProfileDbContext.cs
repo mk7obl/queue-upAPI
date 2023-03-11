@@ -5,10 +5,12 @@ namespace queueUp.Entities
 
     public class PlayerProfileDbContext : DbContext
     {
-        private string _connectionString = "Server=.\\SQLExpress;Database=RestaurantDB;Trusted_Connection=Yes;";
+        private string _connectionString = "Server=.\\SQLExpress;Database=QueueUpDB;Trusted_Connection=Yes;";
 
-        public DbSet<PlayerProfile> PlayerProfile { get; set; }
-        public DbSet<Game> Game { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<PlayerProfile> PlayerProfiles { get; set; }
+        public DbSet<Game> Games { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
