@@ -23,9 +23,9 @@ namespace queueUp.Controllers
        }
 
         [HttpGet]
-        public IEnumerable<User> Get()
+        public ActionResult<IEnumerable<User>> Get()
         {
-
+            return Ok();
         }
     }
 }
