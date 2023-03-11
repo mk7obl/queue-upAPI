@@ -1,8 +1,10 @@
+using queueUp.Entities;
 using queueUp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<PlayerProfileDbContext>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddControllers();
 

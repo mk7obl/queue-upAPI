@@ -10,12 +10,10 @@ namespace queueUp.Controllers
     [Route("api/account")]
     public class AccountController : ControllerBase
     {
-        private readonly PlayerProfileDbContext _dbContext;
         private readonly IAccountService _accountService;
 
-        public AccountController(PlayerProfileDbContext dbContext, IAccountService accountService)
+        public AccountController(IAccountService accountService)
         {
-            _dbContext = dbContext;
             _accountService = accountService;
         }
         [HttpPost("register")]
@@ -31,11 +29,12 @@ namespace queueUp.Controllers
             return Ok();
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<User> GetById([FromQuery]int id)
-        {
-            var result = _dbContext.Users.FirstOrDefault(u => u.Id == id);
-            return Ok(result);
-        }
+        //[HttpGet("{id}")]
+        //public ActionResult<User> GetById([FromQuery] int id)
+        //{
+        //    PlayerProfileDbContext _dbContext = new PlayerProfileDbContext();
+        //    var result = _dbContext.Users.FirstOrDefault(u => u.Id == id);
+        //    return Ok(result);
+        //}
     }
 }
