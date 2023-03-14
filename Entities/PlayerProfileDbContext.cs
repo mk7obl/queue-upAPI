@@ -18,7 +18,7 @@ namespace queueUp.Entities
                 .IsRequired();
 
             modelBuilder.Entity<Game>()
-                .Property(g=>g.Title)
+                .Property(g=>g.GameTitle)
                 .IsRequired();
         }
 
