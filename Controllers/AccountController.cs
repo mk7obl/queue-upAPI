@@ -26,15 +26,15 @@ namespace queueUp.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<User>> Get()
         {
-            return Ok();
+            var results = _accountService.GetAll();
+            return Ok(results);
         }
 
-        //[HttpGet("{id}")]
-        //public ActionResult<User> GetById([FromQuery] int id)
-        //{
-        //    PlayerProfileDbContext _dbContext = new PlayerProfileDbContext();
-        //    var result = _dbContext.Users.FirstOrDefault(u => u.Id == id);
-        //    return Ok(result);
-        //}
+        [HttpGet("{id}")]
+        public ActionResult<User> GetById([FromRoute] int id)
+        {
+            var result = _accountService.GetById(id);
+            return Ok(result);
+        }
     }
 }

@@ -17,6 +17,10 @@ namespace queueUp.Entities
                 .Property(u => u.Email)
                 .IsRequired();
 
+            modelBuilder.Entity<PlayerProfile>()
+                .Property(p=>p.NickName)
+                .IsRequired();
+
             modelBuilder.Entity<Game>()
                 .Property(g=>g.GameTitle)
                 .IsRequired();

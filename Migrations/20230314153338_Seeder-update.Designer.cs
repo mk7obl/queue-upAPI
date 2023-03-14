@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using queueUp.Entities;
 
@@ -11,9 +12,10 @@ using queueUp.Entities;
 namespace queueUp.Migrations
 {
     [DbContext(typeof(PlayerProfileDbContext))]
-    partial class PlayerProfileDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230314153338_Seeder-update")]
+    partial class Seederupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

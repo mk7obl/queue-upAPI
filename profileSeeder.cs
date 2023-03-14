@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using queueUp.Entities;
 
-public class profileSeeder
+public class ProfileSeeder
 {
     private readonly PlayerProfileDbContext _context;
 
-    public profileSeeder(PlayerProfileDbContext context)
+    public ProfileSeeder(PlayerProfileDbContext context)
     {
         _context = context;
     }
@@ -15,11 +15,21 @@ public class profileSeeder
 
         if (_context.Database.CanConnect())
         {
-            if(!_context.PlayerProfiles.Any())
+            if (!_context.PlayerProfiles.Any())
             {
                 var profiles = GetProfiles();
+                _context.PlayerProfiles.AddRange(profiles);
+                _context.SaveChanges();
+            }
+
+            if (!_context.Games.Any())
+            {
+                var games = GetGames();
+                _context.Games.AddRange(games);
+                _context.SaveChanges();
             }
         }
+
     }
 
     private IEnumerable<PlayerProfile> GetProfiles()
